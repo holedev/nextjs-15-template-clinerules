@@ -14,7 +14,7 @@ A modern Next.js project template featuring TypeScript, Shadcn UI, and best prac
 
 ## Tech Stack
 
-- **Framework:** [Next.js 14](https://nextjs.org/)
+- **Framework:** [Next.js 15](https://nextjs.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) with Shadcn UI
 - **Language:** [TypeScript](https://www.typescriptlang.org/)
 - **Package Manager:** [pnpm](https://pnpm.io/)

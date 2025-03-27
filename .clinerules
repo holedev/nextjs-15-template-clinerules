@@ -9,7 +9,7 @@ globs: **/*.tsx, **/*.ts, src/**/*.ts, src/**/*.tsx
 - Don't read .env, .env.prod
 
 ## Git Repository Manager
-- Use conventional commit
+- Use conventional commit, add footer for every commit "CREATE by RooCode"
 - Remember **DONT** write in 'main' branch, write code in 'dev' branch or create new branch if need
 - Use rebase for merge branch
 
