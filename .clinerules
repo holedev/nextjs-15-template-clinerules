@@ -8,6 +8,11 @@ globs: **/*.tsx, **/*.ts, src/**/*.ts, src/**/*.tsx
 ## Security
 - Don't read .env, .env.prod
 
+## Git Repository Manager
+- Use conventional commit
+- Remember **DONT** write in 'main' branch, write code in 'dev' branch or create new branch if need
+- Use rebase for merge branch
+
 ## Manager Package
 - Use pnpm instead of npm 
 - shadcn-ui is old name of lib, use shadcn instead of
