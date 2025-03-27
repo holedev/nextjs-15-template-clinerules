@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js TypeScript Template with Shadcn UI
+
+A modern Next.js project template featuring TypeScript, Shadcn UI, and best practices for building scalable web applications.
+
+## Features
+
+- ⚡ [Next.js App Router](https://nextjs.org/docs/app) for optimal performance and routing
+- 🎨 [Shadcn UI](https://ui.shadcn.com/) for beautiful, accessible components
+- 📝 TypeScript for type safety and better developer experience
+- 🚀 Server Components by default for improved performance
+- 🔄 API routes with Swagger documentation
+- 🎯 ESLint and Prettier for code quality
+- 🛠️ Modern project structure following best practices
+
+## Tech Stack
+
+- **Framework:** [Next.js 14](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) with Shadcn UI
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Package Manager:** [pnpm](https://pnpm.io/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- pnpm (recommended package manager)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone <your-repo-url>
+
+# Navigate to project directory
+cd <project-name>
+
+# Install dependencies
+pnpm install
+```
+
+### Development
+
+```bash
+# Start development server
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                   # App router directories
+│   ├── api/              # API routes with Swagger documentation
+│   ├── (routes)/         # App routes and pages
+│   └── layout.tsx        # Root layout
+├── components/           # Shared components
+│   └── ui/              # UI components
+├── lib/                  # Utilities and helpers
+└── public/              # Static assets
+```
 
-## Learn More
+## Best Practices
 
-To learn more about Next.js, take a look at the following resources:
+### Components
+- Use Server Components by default
+- Mark client components explicitly with 'use client'
+- Wrap client components in Suspense with fallback
+- Use dynamic loading for non-critical components
+- Implement proper error boundaries
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Performance
+- Optimize images with WebP format and proper sizing
+- Minimize use of useEffect and setState
+- Favor Server Components (RSC) where possible
+- Implement proper caching strategies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### API Routes
+- Include Swagger documentation for all API routes
+- Implement proper error handling
+- Use appropriate HTTP methods and status codes
 
-## Deploy on Vercel
+### Forms and Validation
+- Use Zod for form validation
+- Implement server-side validation
+- Handle form errors appropriately
+- Show loading states during form submission
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### State Management
+- Minimize client-side state
+- Use React Context sparingly
+- Prefer server state when possible
+- Implement proper loading states
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Guidelines
+
+1. **Branching:**
+   - Main branch for production
+   - Dev branch for development
+   - Feature branches for new features
+
+2. **Commit Messages:**
+   - Use clear, descriptive commit messages
+   - Follow conventional commits format
+
+3. **Code Style:**
+   - Follow ESLint and Prettier configurations
+   - Use TypeScript's strict mode
+   - Document complex logic with comments
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
