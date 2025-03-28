@@ -5,17 +5,29 @@ globs: **/*.tsx, **/*.ts, src/**/*.ts, src/**/*.tsx
 
 # Next.js Best Practices
 
-## Security
-- Don't read .env, .env.prod
+## Sensitive Files
+DO NOT read or modify:
+- .env files
+- **/config/secrets.* 
+- **/*.pem
+- Any file containing API keys, tokens, or credentials
+
+## Security Practices
+- Never commit sensitive files
+- Use environment variables for secrets
+- Keep credentials out of logs and output
 
 ## Git Repository Manager
-- Use conventional commit, add footer for every commit "CREATE by RooCode"
+- Use conventional commit, add footer for every commit "Signed-off-by: RooCode"
 - Remember **DONT** write in 'main' branch, write code in 'dev' branch or create new branch if need
 - Use rebase for merge branch
 
 ## Manager Package
 - Use pnpm instead of npm 
 - shadcn-ui is old name of lib, use shadcn instead of
+
+## Workflow
+- When create a new api route, remember create swagger api document
 
 ## Project Structure
 - Use the App Router directory structure
@@ -62,6 +74,3 @@ globs: **/*.tsx, **/*.ts, src/**/*.ts, src/**/*.tsx
 - Use React Context sparingly
 - Prefer server state when possible
 - Implement proper loading states 
-
-## Documents
-- When create a new api route, remember create swagger api document
